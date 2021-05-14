@@ -1,0 +1,455 @@
+.consultaTitulo {
+  font-size: 36px;
+  left: 2%;
+  position: absolute;
+  padding-top: 5%; }
+
+.gridTitulo {
+  padding: 0% 10% 0% 35%;
+  margin: 4%;
+  justify-content: center; }
+
+#footerContacto {
+  margin-top: 60%; }
+
+#formulario {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  justify-content: center;
+  padding-top: 2% !important;
+  padding-bottom: 2%;
+  border: solid 8px rgba(143, 193, 206, 0.822);
+  margin: 0;
+  border-radius: 5%;
+  background-color: rgba(230, 159, 93, 0.89);
+  width: 50%;
+  margin-left: 12%; }
+
+#grillaObraDigital {
+  display: grid;
+  grid-template-areas: "img1 img1 tabla1 img2 tabla2" "img3 img3 tabla3 img4 tabla4" "footer footer footer footer footer";
+  grid-template-columns: 10% 23% 14% 33% 14%;
+  grid-template-rows: repeat(2, 720px) 20%;
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 0.625rem;
+  height: 100vh;
+  margin: 0; }
+
+.footerObraOleo {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 0.9375rem;
+  margin-top: 45%; }
+
+.img1D {
+  grid-area: img1;
+  width: 85%; }
+
+.tabla1D {
+  grid-area: tabla1;
+  padding: 0.625rem;
+  margin: 6.25rem 0.625rem 6.25rem 0.0625rem; }
+
+.img2D {
+  grid-area: img2;
+  width: 100%; }
+
+.tabla2D {
+  grid-area: tabla2;
+  padding: 0.625rem;
+  margin: 6.25rem 0.625rem 6.25rem 0.0625rem; }
+
+.img3D {
+  grid-area: img3;
+  width: 90%; }
+
+.tabla3D {
+  grid-area: tabla3;
+  padding: 0.625rem;
+  margin: 6.25rem 0.625rem 6.25rem 0.0625rem; }
+
+#grillaObraOleo {
+  display: grid;
+  grid-template-areas: "img1 img2 " "tabla1 tabla2" "img3 img4 " "tabla3 tabla4" "img5  img6 " "tabla5 tabla6" "img7 img8" "tabla7 tabla8" "footer1 footer1";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 500px 120px 500px 120px 500px 120px 500px 120px 200px;
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 0.625rem;
+  height: 100vh;
+  margin: 0; }
+
+.obraEncabezado {
+  grid-area: titulo;
+  margin: 2%;
+  padding: 0%; }
+
+h1 {
+  grid-area: h1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%; }
+
+.img1 {
+  grid-area: img1;
+  width: 70%;
+  padding: 8%; }
+
+.tabla1 {
+  grid-area: tabla1;
+  padding: 0.625rem;
+  margin: 3%;
+  width: 60%;
+  margin-left: 6%; }
+
+.img2 {
+  grid-area: img2;
+  width: 76%;
+  padding: 8%;
+  width: 76%; }
+
+.tabla2 {
+  grid-area: tabla2;
+  padding: 0.625rem;
+  margin: 3%;
+  padding: 8%;
+  margin-right: 25%;
+  margin-left: 8%; }
+
+.img3 {
+  grid-area: img3;
+  width: 76%;
+  padding: 10%; }
+
+.tabla3 {
+  grid-area: tabla3;
+  padding: 0.625rem;
+  margin: 3%;
+  width: 60%;
+  margin-left: 6%; }
+
+.img4 {
+  grid-area: img4;
+  width: 66%;
+  padding: 8%;
+  margin-left: 16%; }
+
+.tabla4 {
+  grid-area: tabla4;
+  padding: 0.625rem;
+  margin: 3%;
+  width: 60%;
+  margin-left: 20%; }
+
+.img5 {
+  grid-area: img5;
+  width: 70%;
+  padding: 8%;
+  width: 68%; }
+
+.tabla5 {
+  grid-area: tabla5;
+  padding: 0.625rem;
+  margin: 3%;
+  width: 60%;
+  margin-left: 6%; }
+
+.tabla6 {
+  grid-area: tabla6;
+  padding: 0.625rem;
+  margin: 3%;
+  width: 60%;
+  margin-left: 20%; }
+
+.img6 {
+  grid-area: img6;
+  width: 64%;
+  padding: 8%;
+  margin-left: 20%; }
+
+.img7 {
+  grid-area: img7;
+  width: 70%;
+  padding: 8%; }
+
+.tabla7 {
+  grid-area: tabla7;
+  padding: 0.625rem;
+  margin: 3%;
+  margin-left: 6%;
+  margin-right: 30%; }
+
+.img8 {
+  grid-area: img8;
+  width: 76%;
+  padding: 8%; }
+
+.tabla8 {
+  grid-area: tabla8;
+  padding: 0.625rem;
+  margin: 3%;
+  margin-right: 20%;
+  margin-left: 8%; }
+
+footer {
+  grid-area: footer1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 0.9375rem;
+  margin-top: 140%;
+  background-color: rgba(143, 193, 206, 0.822); }
+
+@media only screen and (max-width: 360px) {
+  #grillaObraOleo {
+    display: grid;
+    grid-template-areas: "img1 img1" "tabla1 tabla1" "img2 img2 " "tabla2 tabla2" "img3 img3" "tabla3 tabla3" "img4 img4 " "tabla4 tabla4" "img5 img5" "tabla5 tabla5" "img6 img6" "tabla6 tabla6" "img7 img7" "tabla7 tabla7" "img8 img8" "tabla8 tabla8" "footer footer";
+    grid-template-rows: 300px 125px 300px 125px 300px 125px 300px 125px 300px 125px 300px 125px 300px 125px 300px 125px 20%;
+    grid-template-columns: 40% 40%;
+    height: 100vh;
+    margin: 0;
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem; }
+  .img1 {
+    grid-area: img1;
+    width: 85%; }
+  .tabla1 {
+    grid-area: tabla1;
+    padding: 0.625rem;
+    margin: 0%; }
+  .img2 {
+    grid-area: img2;
+    width: 100%; }
+  .tabla2 {
+    grid-area: tabla2;
+    padding: 0.625rem;
+    margin: 0%; }
+  .img3 {
+    grid-area: img3;
+    width: 90%; }
+  .tabla3 {
+    grid-area: tabla3;
+    padding: 0.625rem;
+    margin: 0%; }
+  .img4 {
+    grid-area: img4;
+    width: 80%; }
+  .tabla4 {
+    grid-area: tabla4;
+    padding: 0.625rem;
+    margin: 0%; }
+  .img5 {
+    grid-area: img5;
+    width: 90%; }
+  .tabla5 {
+    grid-area: tabla5;
+    padding: 0.625rem;
+    margin: 0%; }
+  .tabla6 {
+    grid-area: tabla6;
+    padding: 0.625rem;
+    margin: 0%; }
+  .img6 {
+    grid-area: img6;
+    width: 80%; }
+  .img7 {
+    grid-area: img7;
+    width: 85%; }
+  .tabla7 {
+    grid-area: tabla7;
+    padding: 0.625rem;
+    margin: 0%; }
+  .img8 {
+    grid-area: img8;
+    width: 90%; }
+  .tabla8 {
+    grid-area: tabla8;
+    padding: 0.625rem;
+    margin: 0%; }
+  footer {
+    grid-area: footer;
+    padding-top: 764%;
+    width: 92%; }
+  .imgLogo {
+    display: none; }
+  li {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    font-size: 12px;
+    background-color: chocolate;
+    padding: 30px; } }
+
+@media only screen and (min-width: 360px) and (max-width: 411px) {
+  #grillaObraOleo {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    grid-template-areas: "img1 img1" "tabla1 tabla1 " "img2 img2 " "tabla2 tabla2" "img3 img3" "tabla3 tabla3" "img4 img4" "tabla4 tabla4" "img5 img5" "tabla5 tabla5" "img6 img6" "tabla6 tabla6" "img7 img7" "tabla7 tabla7" "img8 img8" "tabla8 tabla8" "footer footer";
+    grid-column-gap: 20px; }
+  footer {
+    grid-area: footer;
+    padding-top: 761%;
+    width: 99%; }
+  .imgLogo {
+    display: none; }
+  .footer__amor {
+    font-size: 13px; }
+  .footer__amor--modifier:hover {
+    color: #368f8b;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 15px; } }
+
+.imgSobreMi {
+  width: 100%;
+  height: 100%; }
+
+.pSobreMi {
+  margin-top: 25%; }
+
+.centrarBiografia {
+  display: flex;
+  justify-content: center; }
+
+h1 {
+  font-size: 4rem;
+  color: #0e5f74;
+  display: flex;
+  justify-content: center;
+  padding-right: 11%; }
+
+.imgLogo {
+  width: 100%; }
+
+.colorHeader {
+  background-color: rgba(143, 193, 206, 0.822); }
+
+.pIndex {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%; }
+
+.fotosIndex {
+  padding-top: 4%; }
+
+.fotosIndex__margen {
+  border: 6px rgba(230, 159, 93, 0.89) solid;
+  margin-top: 6%;
+  margin-left: 2%;
+  padding: 1%; }
+
+.textoProceso {
+  padding: 12% 4% 8% 4%; }
+
+.indexProceso {
+  display: flex;
+  justify-content: center; }
+
+.colorBody {
+  background-color: rgba(247, 241, 246, 0.863); }
+
+.carousel-inner {
+  margin: 1%; }
+
+.d-block {
+  max-height: 80vh; }
+
+.subrayadoInicio {
+  text-decoration: none; }
+
+.encabezadoSaludo {
+  font-size: 4.5rem;
+  padding: 20px 10px;
+  margin: 20px 40px;
+  border: solid 5px aqua; }
+
+.encabezadoIndex {
+  padding: 25px;
+  margin: 10px;
+  text-align: center; }
+
+.footer {
+  padding-top: 2%; }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  list-style: none;
+  font-size: 0.9375rem;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+
+.obraEncabezado {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px; }
+
+.imgLogo {
+  width: 90%; }
+
+li:hover {
+  display: flex;
+  width: 12%;
+  position: relative;
+  font-size: 18px;
+  background-color: rgba(230, 159, 93, 0.89);
+  padding: 10px;
+  white-space: nowrap;
+  justify-content: center; }
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", Sans-serif;
+  background-color: rgba(143, 193, 206, 0.822);
+  margin-top: 5%;
+  align-items: center;
+  padding-top: 0%; }
+
+.footer__ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+  text-decoration: none;
+  list-style: none; }
+
+.footer__ul li .footerLinks {
+  text-decoration: none;
+  color: #445b6c; }
+
+.footer__amor {
+  color: #445b6c;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 0.9375rem;
+  margin-left: 15px; }
+
+.footer__amor--modifier {
+  color: #368f8b;
+  font-weight: bolder;
+  font-style: oblique;
+  font-size: 36px; }
+
+.container-fluid__padding {
+  padding-top: 4%; }
+
+#formulario {
+  padding-top: 12%; }
