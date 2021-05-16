@@ -6,27 +6,72 @@
 $anchoCompleto: 100%;
 $azul: rgba(143, 193, 206, 0.822);
 
-h1 {
-    font-size: 4rem;
-    color: rgb(14, 95, 116);
-    display: flex;
-    justify-content: center;
-    padding-right: 11%;
+
+.colorBody {
+    background-color: rgba(247, 241, 246, 0.863);
 }
 
-
-.imgLogo {
-    width: $anchoCompleto;
-}
-
-.colorHeader {
+Header {
     background-color: rgba(143, 193, 206, 0.822);
+
+    div div {
+        margin: .6em auto;
+
+        h1 {
+            font-size: 4rem;
+            color: rgb(14, 95, 116);
+            display: flex;
+            justify-content: center;
+            padding: 1%;
+
+        }
+    }
+
+    div div {
+
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin: .6em auto;
+        }
+
+        li:hover {
+            display: flex;
+            width: 12%;
+            position: relative;
+            font-size: 18px;
+            background-color: rgba(230, 159, 93, 0.89);
+            padding: 10px;
+            white-space: nowrap;
+            justify-content: center;
+        }
+
+    }
 }
 
 .pIndex {
     display: flex;
     justify-content: center;
     padding-top: 5%;
+}
+
+section {
+    div.textoProceso {
+
+        padding: 12% 4% 8% 4%;
+
+
+        H2.indexProceso {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+}
+
+footer.footer {
+    padding-top: 2%;
 }
 
 .fotosIndex {
@@ -40,49 +85,12 @@ h1 {
     padding: 1%;
 }
 
-.textoProceso {
-    padding: 12% 4% 8% 4%;
-}
-
-
-.indexProceso {
-    display: flex;
-    justify-content: center;
-}
-
-.colorBody {
-    background-color: rgba(247, 241, 246, 0.863);
-}
-
 .carousel-inner {
     margin: 1%;
 }
 
 .d-block {
     max-height: 80vh;
-}
-
-
-.subrayadoInicio {
-    text-decoration: none;
-}
-
-
-.encabezadoSaludo {
-    font-size: 4.5rem;
-    padding: 20px 10px;
-    margin: 20px 40px;
-    border: solid 5px aqua
-}
-
-.encabezadoIndex {
-    padding: 25px;
-    margin: 10px;
-    text-align: center;
-}
-
-.footer {
-    padding-top: 2%;
 }
 
 
@@ -104,37 +112,8 @@ a {
 }
 
 
-.obraEncabezado {
-    grid-area: titulo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-}
-
-
-
-
-.imgLogo {
-
-    width: 90%;
-
-}
-
-
-li:hover {
-    display: flex;
-    width: 12%;
-    position: relative;
-    font-size: 18px;
-    background-color: rgba(230, 159, 93, 0.89);
-    padding: 10px;
-    white-space: nowrap;
-    justify-content: center;
-}
 
 .footer {
-    grid-area: footer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,17 +153,4 @@ li:hover {
     font-weight: bolder;
     font-style: oblique;
     font-size: 36px;
-}
-
-
-
-
-.container-fluid__padding {
-    padding-top: 4%;
-}
-
-
-
-#formulario {
-    padding-top: 12%;
 }

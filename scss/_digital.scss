@@ -1,60 +1,73 @@
 #grillaObraDigital {
     display: grid;
     grid-template-areas:
-        "img1 img1 tabla1 img2 tabla2"
-        "img3 img3 tabla3 img4 tabla4"
-        "footer footer footer footer footer";
-    grid-template-columns: 10% 23% 14% 33% 14%;
-    grid-template-rows: repeat(2, 720px) 20%;
+        "img1D img2D "
+        "img3D  ."
+        "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 720px) auto;
     grid-column-gap: 1.25rem;
     grid-row-gap: 0.625rem;
     height: 100vh;
     margin: 0;
-}
 
-.footerObraOleo {
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 0.9375rem;
-    margin-top: 45%
-}
+    .img1D {
+        grid-area: img1D;
+        width: 80%;
+        padding: 8%;
 
-.img1D {
-    grid-area: img1;
-    width: 85%;
+        img {
+            max-width: 100%;
+        }
 
-}
-
-.tabla1D {
-    grid-area: tabla1;
-    padding: 0.625rem;
-    margin: 6.25rem 0.625rem 6.25rem 0.0625rem;
+        table {
+            width: 100%;
+        }
+    }
 
 
-}
+    .img2D {
+        grid-area: img2D;
+        width: 80%;
+        padding: 8%;
 
-.img2D {
-    grid-area: img2;
-    width: 100%;
-}
+        img {
+            max-width: 100%;
+        }
 
-.tabla2D {
-    grid-area: tabla2;
-    padding: 0.625rem;
-    margin: 6.25rem 0.625rem 6.25rem 0.0625rem;
-}
+        table {
+            width: 100%;
+        }
+    }
 
-.img3D {
-    grid-area: img3;
-    width: 90%;
-}
 
-.tabla3D {
-    grid-area: tabla3;
-    padding: 0.625rem;
-    margin: 6.25rem 0.625rem 6.25rem 0.0625rem;
+    .img3D {
+        grid-area: img3D;
+        width: 80%;
+        padding: 8%;
+
+        img {
+            max-width: 100%;
+        }
+
+        table {
+            width: 100%;
+        }
+    }
+
+    footer {
+        grid-area: footer;
+
+        .footerObraOleo {
+            grid-area: footer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "Montserrat", Sans-serif;
+            font-size: 0.9375rem;
+            margin-top: 45%
+        }
+    }
+
 }

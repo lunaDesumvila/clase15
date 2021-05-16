@@ -1,18 +1,12 @@
-.consultaTitulo {
+div h1.consultaTitulo {
+  padding: 1% 10% 1% 35%;
   font-size: 36px;
   left: 2%;
   position: absolute;
-  padding-top: 5%; }
-
-.gridTitulo {
-  padding: 0% 10% 0% 35%;
   margin: 4%;
   justify-content: center; }
 
-#footerContacto {
-  margin-top: 60%; }
-
-#formulario {
+div div#formulario {
   display: flex;
   position: absolute;
   top: 50%;
@@ -20,322 +14,277 @@
   padding-top: 2% !important;
   padding-bottom: 2%;
   border: solid 8px rgba(143, 193, 206, 0.822);
-  margin: 0;
+  margin: 4%;
   border-radius: 5%;
   background-color: rgba(230, 159, 93, 0.89);
   width: 50%;
   margin-left: 12%; }
 
+#footerContacto {
+  margin-top: 50%; }
+
 #grillaObraDigital {
   display: grid;
-  grid-template-areas: "img1 img1 tabla1 img2 tabla2" "img3 img3 tabla3 img4 tabla4" "footer footer footer footer footer";
-  grid-template-columns: 10% 23% 14% 33% 14%;
-  grid-template-rows: repeat(2, 720px) 20%;
-  grid-column-gap: 1.25rem;
-  grid-row-gap: 0.625rem;
-  height: 100vh;
-  margin: 0; }
-
-.footerObraOleo {
-  grid-area: footer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Montserrat", Sans-serif;
-  font-size: 0.9375rem;
-  margin-top: 45%; }
-
-.img1D {
-  grid-area: img1;
-  width: 85%; }
-
-.tabla1D {
-  grid-area: tabla1;
-  padding: 0.625rem;
-  margin: 6.25rem 0.625rem 6.25rem 0.0625rem; }
-
-.img2D {
-  grid-area: img2;
-  width: 100%; }
-
-.tabla2D {
-  grid-area: tabla2;
-  padding: 0.625rem;
-  margin: 6.25rem 0.625rem 6.25rem 0.0625rem; }
-
-.img3D {
-  grid-area: img3;
-  width: 90%; }
-
-.tabla3D {
-  grid-area: tabla3;
-  padding: 0.625rem;
-  margin: 6.25rem 0.625rem 6.25rem 0.0625rem; }
-
-#grillaObraOleo {
-  display: grid;
-  grid-template-areas: "img1 img2 " "tabla1 tabla2" "img3 img4 " "tabla3 tabla4" "img5  img6 " "tabla5 tabla6" "img7 img8" "tabla7 tabla8" "footer1 footer1";
+  grid-template-areas: "img1D img2D " "img3D  ." "footer footer";
   grid-template-columns: 50% 50%;
-  grid-template-rows: 500px 120px 500px 120px 500px 120px 500px 120px 200px;
+  grid-template-rows: repeat(2, 720px) auto;
   grid-column-gap: 1.25rem;
   grid-row-gap: 0.625rem;
   height: 100vh;
   margin: 0; }
+  #grillaObraDigital .img1D {
+    grid-area: img1D;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraDigital .img1D img {
+      max-width: 100%; }
+    #grillaObraDigital .img1D table {
+      width: 100%; }
+  #grillaObraDigital .img2D {
+    grid-area: img2D;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraDigital .img2D img {
+      max-width: 100%; }
+    #grillaObraDigital .img2D table {
+      width: 100%; }
+  #grillaObraDigital .img3D {
+    grid-area: img3D;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraDigital .img3D img {
+      max-width: 100%; }
+    #grillaObraDigital .img3D table {
+      width: 100%; }
+  #grillaObraDigital footer {
+    grid-area: footer; }
+    #grillaObraDigital footer .footerObraOleo {
+      grid-area: footer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: "Montserrat", Sans-serif;
+      font-size: 0.9375rem;
+      margin-top: 45%; }
 
 .obraEncabezado {
   grid-area: titulo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
   margin: 2%;
   padding: 0%; }
 
-h1 {
-  grid-area: h1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3%; }
-
-.img1 {
-  grid-area: img1;
-  width: 70%;
-  padding: 8%; }
-
-.tabla1 {
-  grid-area: tabla1;
-  padding: 0.625rem;
-  margin: 3%;
-  width: 60%;
-  margin-left: 6%; }
-
-.img2 {
-  grid-area: img2;
-  width: 76%;
-  padding: 8%;
-  width: 76%; }
-
-.tabla2 {
-  grid-area: tabla2;
-  padding: 0.625rem;
-  margin: 3%;
-  padding: 8%;
-  margin-right: 25%;
-  margin-left: 8%; }
-
-.img3 {
-  grid-area: img3;
-  width: 76%;
-  padding: 10%; }
-
-.tabla3 {
-  grid-area: tabla3;
-  padding: 0.625rem;
-  margin: 3%;
-  width: 60%;
-  margin-left: 6%; }
-
-.img4 {
-  grid-area: img4;
-  width: 66%;
-  padding: 8%;
-  margin-left: 16%; }
-
-.tabla4 {
-  grid-area: tabla4;
-  padding: 0.625rem;
-  margin: 3%;
-  width: 60%;
-  margin-left: 20%; }
-
-.img5 {
-  grid-area: img5;
-  width: 70%;
-  padding: 8%;
-  width: 68%; }
-
-.tabla5 {
-  grid-area: tabla5;
-  padding: 0.625rem;
-  margin: 3%;
-  width: 60%;
-  margin-left: 6%; }
-
-.tabla6 {
-  grid-area: tabla6;
-  padding: 0.625rem;
-  margin: 3%;
-  width: 60%;
-  margin-left: 20%; }
-
-.img6 {
-  grid-area: img6;
-  width: 64%;
-  padding: 8%;
-  margin-left: 20%; }
-
-.img7 {
-  grid-area: img7;
-  width: 70%;
-  padding: 8%; }
-
-.tabla7 {
-  grid-area: tabla7;
-  padding: 0.625rem;
-  margin: 3%;
-  margin-left: 6%;
-  margin-right: 30%; }
-
-.img8 {
-  grid-area: img8;
-  width: 76%;
-  padding: 8%; }
-
-.tabla8 {
-  grid-area: tabla8;
-  padding: 0.625rem;
-  margin: 3%;
-  margin-right: 20%;
-  margin-left: 8%; }
-
-footer {
-  grid-area: footer1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Montserrat", Sans-serif;
-  font-size: 0.9375rem;
-  margin-top: 140%;
-  background-color: rgba(143, 193, 206, 0.822); }
+#grillaObraOleo {
+  display: grid;
+  grid-template-areas: "img1 img2 " "img3 img4 " "img5 img6 " "img7 img8" "img9 img10" "footer1 footer1";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 700px 700px 700px 700px 700px auto;
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 0.625rem;
+  height: 100vh;
+  margin: 0; }
+  #grillaObraOleo .img1 {
+    grid-area: img1;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraOleo .img1 img {
+      max-width: 100%; }
+    #grillaObraOleo .img1 table {
+      width: 100%; }
+  #grillaObraOleo .img2 {
+    grid-area: img2;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraOleo .img2 img {
+      max-width: 100%; }
+    #grillaObraOleo .img2 table {
+      width: 100%; }
+  #grillaObraOleo .img3 {
+    grid-area: img3;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraOleo .img3 img {
+      max-width: 100%; }
+    #grillaObraOleo .img3 table {
+      width: 100%; }
+  #grillaObraOleo .img4 {
+    grid-area: img4;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraOleo .img4 img {
+      max-width: 100%; }
+    #grillaObraOleo .img4 table {
+      width: 100%; }
+  #grillaObraOleo .img5 {
+    grid-area: img5;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraOleo .img5 img {
+      max-width: 100%; }
+    #grillaObraOleo .img5 table {
+      width: 100%; }
+  #grillaObraOleo .img6 {
+    grid-area: img6;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraOleo .img6 img {
+      max-width: 100%; }
+    #grillaObraOleo .img6 table {
+      width: 100%; }
+  #grillaObraOleo .img7 {
+    grid-area: img7;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraOleo .img7 img {
+      max-width: 100%; }
+    #grillaObraOleo .img7 table {
+      width: 100%; }
+  #grillaObraOleo .img8 {
+    grid-area: img8;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraOleo .img8 img {
+      max-width: 100%; }
+    #grillaObraOleo .img8 table {
+      width: 100%; }
+  #grillaObraOleo .img9 {
+    grid-area: img9;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraOleo .img9 img {
+      max-width: 100%; }
+    #grillaObraOleo .img9 table {
+      width: 100%; }
+  #grillaObraOleo .img10 {
+    grid-area: img10;
+    width: 80%;
+    padding: 8%; }
+    #grillaObraOleo .img10 img {
+      max-width: 100%; }
+    #grillaObraOleo .img10 table {
+      width: 100%; }
+  #grillaObraOleo footer.footer {
+    grid-area: footer1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", Sans-serif;
+    background-color: rgba(143, 193, 206, 0.822);
+    margin-top: 5%;
+    align-items: center;
+    padding-top: 0%; }
 
 @media only screen and (max-width: 360px) {
   #grillaObraOleo {
     display: grid;
-    grid-template-areas: "img1 img1" "tabla1 tabla1" "img2 img2 " "tabla2 tabla2" "img3 img3" "tabla3 tabla3" "img4 img4 " "tabla4 tabla4" "img5 img5" "tabla5 tabla5" "img6 img6" "tabla6 tabla6" "img7 img7" "tabla7 tabla7" "img8 img8" "tabla8 tabla8" "footer footer";
-    grid-template-rows: 300px 125px 300px 125px 300px 125px 300px 125px 300px 125px 300px 125px 300px 125px 300px 125px 20%;
-    grid-template-columns: 40% 40%;
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "footer";
+    grid-template-rows: repeat(10, 500px) auto;
+    grid-template-columns: 100%;
     height: 100vh;
     margin: 0;
     grid-column-gap: 0rem;
     grid-row-gap: 0rem; }
-  .img1 {
-    grid-area: img1;
-    width: 85%; }
-  .tabla1 {
-    grid-area: tabla1;
-    padding: 0.625rem;
-    margin: 0%; }
-  .img2 {
-    grid-area: img2;
-    width: 100%; }
-  .tabla2 {
-    grid-area: tabla2;
-    padding: 0.625rem;
-    margin: 0%; }
-  .img3 {
-    grid-area: img3;
-    width: 90%; }
-  .tabla3 {
-    grid-area: tabla3;
-    padding: 0.625rem;
-    margin: 0%; }
-  .img4 {
-    grid-area: img4;
-    width: 80%; }
-  .tabla4 {
-    grid-area: tabla4;
-    padding: 0.625rem;
-    margin: 0%; }
-  .img5 {
-    grid-area: img5;
-    width: 90%; }
-  .tabla5 {
-    grid-area: tabla5;
-    padding: 0.625rem;
-    margin: 0%; }
-  .tabla6 {
-    grid-area: tabla6;
-    padding: 0.625rem;
-    margin: 0%; }
-  .img6 {
-    grid-area: img6;
-    width: 80%; }
-  .img7 {
-    grid-area: img7;
-    width: 85%; }
-  .tabla7 {
-    grid-area: tabla7;
-    padding: 0.625rem;
-    margin: 0%; }
-  .img8 {
-    grid-area: img8;
-    width: 90%; }
-  .tabla8 {
-    grid-area: tabla8;
-    padding: 0.625rem;
-    margin: 0%; }
-  footer {
-    grid-area: footer;
-    padding-top: 764%;
-    width: 92%; }
-  .imgLogo {
-    display: none; }
-  li {
-    display: inline-block;
-    width: 40%;
-    position: relative;
-    font-size: 12px;
-    background-color: chocolate;
-    padding: 30px; } }
+    #grillaObraOleo .img1 {
+      grid-area: img1;
+      width: 100%; }
+    #grillaObraOleo .img2 {
+      grid-area: img2;
+      width: 100%; }
+    #grillaObraOleo .img3 {
+      grid-area: img3;
+      width: 100%; }
+    #grillaObraOleo .img4 {
+      grid-area: img4;
+      width: 100%; }
+    #grillaObraOleo .img5 {
+      grid-area: img5;
+      width: 100%; }
+    #grillaObraOleo .img6 {
+      grid-area: img6;
+      width: 100%; }
+    #grillaObraOleo .img7 {
+      grid-area: img7;
+      width: 100%; }
+    #grillaObraOleo .img8 {
+      grid-area: img8;
+      width: 100%; }
+    #grillaObraOleo .img9 {
+      grid-area: img9;
+      width: 100%; }
+    #grillaObraOleo .img10 {
+      grid-area: img10;
+      width: 100%; }
+    #grillaObraOleo footer.footer {
+      grid-area: footer;
+      width: 100%; }
+  header div div div h1 {
+    font-size: 2rem; } }
 
-@media only screen and (min-width: 360px) and (max-width: 411px) {
+@media only screen and (max-width: 1024px) {
   #grillaObraOleo {
     display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: auto;
-    grid-template-areas: "img1 img1" "tabla1 tabla1 " "img2 img2 " "tabla2 tabla2" "img3 img3" "tabla3 tabla3" "img4 img4" "tabla4 tabla4" "img5 img5" "tabla5 tabla5" "img6 img6" "tabla6 tabla6" "img7 img7" "tabla7 tabla7" "img8 img8" "tabla8 tabla8" "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 600px) auto;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "footer1 footer1";
     grid-column-gap: 20px; }
-  footer {
-    grid-area: footer;
-    padding-top: 761%;
-    width: 99%; }
-  .imgLogo {
-    display: none; }
-  .footer__amor {
-    font-size: 13px; }
-  .footer__amor--modifier:hover {
-    color: #368f8b;
-    font-weight: bolder;
-    font-style: oblique;
-    font-size: 15px; } }
+  footer.footer {
+    grid-area: footer1;
+    width: 100%; } }
 
-.imgSobreMi {
-  width: 100%;
-  height: 100%; }
+div.container-fluid__padding {
+  padding-top: 4%; }
+  div.container-fluid__padding div img.imgSobreMi {
+    width: 100%;
+    height: 100%; }
+  div.container-fluid__padding div h2.pSobreMi {
+    margin-top: 25%;
+    display: flex;
+    justify-content: center; }
 
-.pSobreMi {
-  margin-top: 25%; }
+.colorBody {
+  background-color: rgba(247, 241, 246, 0.863); }
 
-.centrarBiografia {
-  display: flex;
-  justify-content: center; }
-
-h1 {
-  font-size: 4rem;
-  color: #0e5f74;
-  display: flex;
-  justify-content: center;
-  padding-right: 11%; }
-
-.imgLogo {
-  width: 100%; }
-
-.colorHeader {
+Header {
   background-color: rgba(143, 193, 206, 0.822); }
+  Header div div {
+    margin: .6em auto; }
+    Header div div h1 {
+      font-size: 4rem;
+      color: #0e5f74;
+      display: flex;
+      justify-content: center;
+      padding: 1%; }
+  Header div div .navbar {
+    display: flex;
+    justify-content: center;
+    margin: .6em auto; }
+  Header div div li:hover {
+    display: flex;
+    width: 12%;
+    position: relative;
+    font-size: 18px;
+    background-color: rgba(230, 159, 93, 0.89);
+    padding: 10px;
+    white-space: nowrap;
+    justify-content: center; }
 
 .pIndex {
   display: flex;
   justify-content: center;
   padding-top: 5%; }
+
+section div.textoProceso {
+  padding: 12% 4% 8% 4%; }
+  section div.textoProceso H2.indexProceso {
+    display: flex;
+    justify-content: center; }
+
+footer.footer {
+  padding-top: 2%; }
 
 .fotosIndex {
   padding-top: 4%; }
@@ -346,38 +295,11 @@ h1 {
   margin-left: 2%;
   padding: 1%; }
 
-.textoProceso {
-  padding: 12% 4% 8% 4%; }
-
-.indexProceso {
-  display: flex;
-  justify-content: center; }
-
-.colorBody {
-  background-color: rgba(247, 241, 246, 0.863); }
-
 .carousel-inner {
   margin: 1%; }
 
 .d-block {
   max-height: 80vh; }
-
-.subrayadoInicio {
-  text-decoration: none; }
-
-.encabezadoSaludo {
-  font-size: 4.5rem;
-  padding: 20px 10px;
-  margin: 20px 40px;
-  border: solid 5px aqua; }
-
-.encabezadoIndex {
-  padding: 25px;
-  margin: 10px;
-  text-align: center; }
-
-.footer {
-  padding-top: 2%; }
 
 ul {
   display: flex;
@@ -393,28 +315,7 @@ ul {
 a {
   text-decoration: none; }
 
-.obraEncabezado {
-  grid-area: titulo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px; }
-
-.imgLogo {
-  width: 90%; }
-
-li:hover {
-  display: flex;
-  width: 12%;
-  position: relative;
-  font-size: 18px;
-  background-color: rgba(230, 159, 93, 0.89);
-  padding: 10px;
-  white-space: nowrap;
-  justify-content: center; }
-
 .footer {
-  grid-area: footer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -447,9 +348,3 @@ li:hover {
   font-weight: bolder;
   font-style: oblique;
   font-size: 36px; }
-
-.container-fluid__padding {
-  padding-top: 4%; }
-
-#formulario {
-  padding-top: 12%; }
