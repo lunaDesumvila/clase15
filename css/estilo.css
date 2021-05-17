@@ -1,3 +1,6 @@
+.consultaTitulo {
+  text-align: center; }
+
 #grillaContacto {
   display: grid;
   grid-template-areas: "h1" "contacto" "formulario" "footer";
