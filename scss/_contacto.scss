@@ -1,32 +1,114 @@
-div {
+ #grillaContacto {
+     display: grid;
+     grid-template-areas:
+         "h1"
+         "contacto"
+         "formulario"
+         "footer";
+     grid-template-rows: 100px 500px auto;
+     grid-template-columns: 100%;
+     height: 100vh;
+     margin: 0;
+     grid-column-gap: 0rem;
+     grid-row-gap: 0rem;
+
+     header {
+         grid-area: h1;
+     }
+
+     section div {
+         h1.consultaTitulo {
+             grid-area: contacto;
+             padding: 1% 10% 1% 35%;
+             font-size: 36px;
+             margin: 1%;
+         }
+     }
+
+     form.formulario {
+         grid-area: formulario;
+         padding: 2% !important;
+         border: solid 8px rgba(143, 193, 206, 0.822);
+         margin: 2%;
+         margin-left: 13%;
+         border-radius: 5%;
+         background-color: rgba(230, 159, 93, 0.89);
+         width: 70%;
+         align-items: center;
+         justify-content: center;
+     }
+
+     #footerContacto {
+         grid-area: footer;
+     }
+ }
+
+ @media only screen and (max-width:360px) {
+     #grillaContacto {
+         display: grid;
+         grid-template-areas:
+             "contacto"
+             "formulario"
+             "footer";
+         grid-template-rows: 70px 500px auto;
+         grid-template-columns: 100%;
+         height: 100vh;
+         margin: 0;
+         grid-column-gap: 0rem;
+         grid-row-gap: 0rem;
+
+         div h1.consultaTitulo {
+             grid-area: contacto;
+             padding: 0%;
+             position: relative;
+             padding-left: 16%;
+         }
+
+         form.formulario {
+             grid-area: formulario;
+             width: 74%;
+             font-size: 10px;
+             margin-top: 16%;
+         }
+
+         #footerContacto {
+             grid-area: footer;
+         }
+     }
+ }
 
 
-    h1.consultaTitulo {
-        padding: 1% 10% 1% 35%;
-        font-size: 36px;
-        left: 2%;
-        position: absolute;
-        margin: 4%;
-        justify-content: center;
-    }
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+     #grillaContacto {
+         display: grid;
+         grid-template-columns: 100%;
+         grid-template-rows: 100px 650px 100px;
+         grid-template-areas:
+             "contacto"
+             "formulario"
+             "footer";
+         grid-column-gap: 20px;
 
-    div#formulario {
-        display: flex;
-        position: absolute;
-        top: 50%;
-        justify-content: center;
-        padding-top: 2% !important;
-        padding-bottom: 2%;
-        border: solid 8px rgba(143, 193, 206, 0.822);
-        margin: 4%;
-        border-radius: 5%;
-        background-color: rgba(230, 159, 93, 0.89);
-        width: 50%;
-        margin-left: 12%;
+         div h1.consultaTitulo {
+             grid-area: contacto;
+             padding: 0%;
+             position: relative;
+             padding-left: 34%;
+             font-size: 50px;
 
-    }
-}
+         }
 
-#footerContacto {
-    margin-top: 50%;
-}
+         form.formulario {
+             grid-area: formulario;
+             width: 74%;
+             font-size: 30px;
+             margin-top: 8%;
+         }
+
+         #footerContacto {
+             grid-area: footer;
+         }
+     }
+
+
+ }
