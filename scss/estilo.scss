@@ -152,3 +152,31 @@ a {
     font-style: oblique;
     font-size: 36px;
 }
+
+
+@media only screen and (max-width:360px) {
+    #grillaIndex {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 220px;
+        grid-template-areas:
+            "carousel"
+            "texto"
+        ;
+        grid-column-gap: 20px;
+
+        .fotosIndex__margen {
+            grid-area: carousel;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .textoProceso {
+            grid-area: texto;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
