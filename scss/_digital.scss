@@ -108,3 +108,81 @@
         justify-self: center;
     }
 }
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #grillaObraDigital {
+        display: grid;
+        grid-template-areas:
+            "img1D img2D "
+            "img3D  ."
+            "footer footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(2, 600px) auto;
+        grid-column-gap: 1.25rem;
+        grid-row-gap: 0.625rem;
+        height: 100vh;
+        margin: 0;
+
+        .img1D {
+            grid-area: img1D;
+            width: 80%;
+            padding: 8%;
+
+            img {
+                max-width: 100%;
+            }
+
+            table {
+                width: 100%;
+            }
+        }
+
+
+        .img2D {
+            grid-area: img2D;
+            width: 80%;
+            padding: 8%;
+
+            img {
+                max-width: 100%;
+            }
+
+            table {
+                width: 100%;
+            }
+        }
+
+
+        .img3D {
+            grid-area: img3D;
+            width: 80%;
+            padding: 8%;
+
+            img {
+                max-width: 100%;
+            }
+
+            table {
+                width: 100%;
+            }
+        }
+
+        footer {
+            grid-area: footer;
+
+            .footerObraOleo {
+                grid-area: footer;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: "Montserrat", Sans-serif;
+                font-size: 0.9375rem;
+                margin-top: 45%
+            }
+        }
+    }
+}
