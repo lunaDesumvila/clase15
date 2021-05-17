@@ -99,7 +99,6 @@ $azul: rgba(143, 193, 206, 0.822);
         }
     }
 
-
     .img6 {
         grid-area: img6;
         width: 80%;
@@ -187,15 +186,6 @@ $azul: rgba(143, 193, 206, 0.822);
     }
 }
 
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width:360px) {
     #grillaObraOleo {
         display: grid;
@@ -217,76 +207,85 @@ $azul: rgba(143, 193, 206, 0.822);
         grid-column-gap: 0rem;
         grid-row-gap: 0rem;
 
-
-
         .img1 {
             grid-area: img1;
             width: 100%;
+            text-align: center;
+
         }
 
         .img2 {
             grid-area: img2;
+            text-align: center;
             width: 100%;
         }
 
         .img3 {
             grid-area: img3;
+            text-align: center;
             width: 100%;
         }
 
         .img4 {
             grid-area: img4;
+            text-align: center;
             width: 100%;
         }
 
         .img5 {
             grid-area: img5;
+            text-align: center;
             width: 100%;
         }
 
         .img6 {
             grid-area: img6;
+            text-align: center;
             width: 100%;
         }
 
         .img7 {
             grid-area: img7;
+            text-align: center;
             width: 100%;
         }
 
         .img8 {
             grid-area: img8;
+            text-align: center;
             width: 100%;
         }
 
         .img9 {
             grid-area: img9;
+            text-align: center;
             width: 100%;
         }
 
         .img10 {
             grid-area: img10;
+            text-align: center;
             width: 100%;
         }
 
         footer.footer {
             grid-area: footer;
+            text-align: center;
             width: 100%;
         }
     }
 
     header div div div h1 {
         font-size: 2rem;
-
     }
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     #grillaObraOleo {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(5, 600px) auto;
+        grid-template-rows: repeat(5, 500px) auto;
         grid-template-areas: "img1 img2"
             "img3 img4"
             "img5 img6"
