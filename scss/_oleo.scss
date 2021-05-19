@@ -10,6 +10,20 @@ $azul: rgba(143, 193, 206, 0.822);
     padding: 0%;
 }
 
+h3 {
+    margin-left: 5%;
+}
+
+div h3 span.badge:hover {
+    font-size: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+
+
 #grillaObraOleo {
     display: grid;
     grid-template-areas:
