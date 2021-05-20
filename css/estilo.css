@@ -12,7 +12,7 @@
   grid-row-gap: 0rem; }
   #grillaContacto header {
     grid-area: h1; }
-  #grillaContacto section div h1.consultaTitulo {
+  #grillaContacto section div div div h1.consultaTitulo {
     grid-area: contacto;
     padding: 1% 10% 1% 35%;
     font-size: 36px;
@@ -22,7 +22,8 @@
     padding: 2% !important;
     border: solid 8px rgba(143, 193, 206, 0.822);
     margin: 2%;
-    margin-left: 13%;
+    margin-top: 6%;
+    margin-left: 16%;
     border-radius: 5%;
     background-color: rgba(230, 159, 93, 0.89);
     width: 70%;
@@ -417,6 +418,9 @@ div.container-fluid__padding {
 .colorBody {
   background-color: rgba(247, 241, 246, 0.863); }
 
+.logoCompra {
+  width: 100%; }
+
 Header {
   background-color: rgba(143, 193, 206, 0.822); }
   Header div div {
@@ -426,7 +430,8 @@ Header {
       color: #0e5f74;
       display: flex;
       justify-content: center;
-      padding: 1%; }
+      padding: 1%;
+      padding-left: 12%; }
   Header div div .navbar {
     display: flex;
     justify-content: center;
@@ -458,11 +463,14 @@ footer.footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-content: center;
   font-family: "Montserrat", Sans-serif;
   background-color: rgba(143, 193, 206, 0.822);
   margin-top: 5%;
-  align-items: center;
   padding-top: 0%; }
+  footer.footer div h3 {
+    color: #0e5f74;
+    padding-top: 4%; }
 
 div .fotosIndex {
   padding-top: 4%; }
@@ -512,7 +520,7 @@ a {
 .footer__amor {
   color: #445b6c;
   font-family: "Montserrat", Sans-serif;
-  font-size: 0.9375rem;
+  font-size: 15px;
   margin-left: 15px; }
 
 @media only screen and (max-width: 360px) {
