@@ -62,7 +62,7 @@ section {
         padding: 12% 4% 8% 4%;
 
 
-        H2.indexProceso {
+        h2.indexProceso {
             display: flex;
             justify-content: center;
         }
@@ -72,10 +72,28 @@ section {
 
 footer.footer {
     padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", Sans-serif;
+    background-color: $azul;
+    margin-top: 5%;
+    align-items: center;
+    padding-top: 0%;
+
 }
 
-.fotosIndex {
+div .fotosIndex {
     padding-top: 4%;
+
+    div .fotosIndex__margen {
+        border: 6px rgba(230, 159, 93, 0.89) solid;
+        margin-top: 6%;
+        margin-left: 2%;
+        padding: 1%;
+    }
+
 }
 
 .fotosIndex__margen {
@@ -113,17 +131,6 @@ a {
 
 
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Montserrat", Sans-serif;
-    background-color: $azul;
-    margin-top: 5%;
-    align-items: center;
-    padding-top: 0%;
-}
 
 .footer__ul {
     display: flex;
@@ -134,7 +141,6 @@ a {
 }
 
 .footer__ul li .footerLinks {
-
     text-decoration: none;
     color: #445b6c;
 }
@@ -146,13 +152,7 @@ a {
     margin-left: 15px;
 }
 
-.footer__amor--modifier {
-    color: #368f8b;
-    font-weight: bolder;
-    font-style: oblique;
-    font-size: 36px;
-}
-
+//MEDIA QUERY INDEX
 
 @media only screen and (max-width:360px) {
     #grillaIndex {

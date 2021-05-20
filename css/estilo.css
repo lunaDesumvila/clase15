@@ -202,13 +202,6 @@
 h3 {
   margin-left: 5%; }
 
-div h3 span.badge:hover {
-  font-size: 40px;
-  padding-left: 3%;
-  padding-right: 3%;
-  justify-content: center;
-  margin-left: 5%; }
-
 #grillaObraOleo {
   display: grid;
   grid-template-areas: "img1 img2 " "img3 img4 " "img5 img6 " "img7 img8" "img9 img10" "footer1 footer1";
@@ -455,15 +448,29 @@ Header {
 
 section div.textoProceso {
   padding: 12% 4% 8% 4%; }
-  section div.textoProceso H2.indexProceso {
+  section div.textoProceso h2.indexProceso {
     display: flex;
     justify-content: center; }
 
 footer.footer {
-  padding-top: 2%; }
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", Sans-serif;
+  background-color: rgba(143, 193, 206, 0.822);
+  margin-top: 5%;
+  align-items: center;
+  padding-top: 0%; }
 
-.fotosIndex {
+div .fotosIndex {
   padding-top: 4%; }
+  div .fotosIndex div .fotosIndex__margen {
+    border: 6px rgba(230, 159, 93, 0.89) solid;
+    margin-top: 6%;
+    margin-left: 2%;
+    padding: 1%; }
 
 .fotosIndex__margen {
   border: 6px rgba(230, 159, 93, 0.89) solid;
@@ -491,17 +498,6 @@ ul {
 a {
   text-decoration: none; }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Montserrat", Sans-serif;
-  background-color: rgba(143, 193, 206, 0.822);
-  margin-top: 5%;
-  align-items: center;
-  padding-top: 0%; }
-
 .footer__ul {
   display: flex;
   justify-content: space-around;
@@ -518,12 +514,6 @@ a {
   font-family: "Montserrat", Sans-serif;
   font-size: 0.9375rem;
   margin-left: 15px; }
-
-.footer__amor--modifier {
-  color: #368f8b;
-  font-weight: bolder;
-  font-style: oblique;
-  font-size: 36px; }
 
 @media only screen and (max-width: 360px) {
   #grillaIndex {

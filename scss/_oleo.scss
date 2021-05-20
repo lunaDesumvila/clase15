@@ -14,13 +14,6 @@ h3 {
     margin-left: 5%;
 }
 
-div h3 span.badge:hover {
-    font-size: 40px;
-    padding-left: 3%;
-    padding-right: 3%;
-    justify-content: center;
-    margin-left: 5%;
-}
 
 
 
@@ -199,6 +192,8 @@ div h3 span.badge:hover {
         padding-top: 0%;
     }
 }
+
+//MEDIA QUERIES DE OLEO
 
 @media only screen and (max-width:360px) {
     #grillaObraOleo {
