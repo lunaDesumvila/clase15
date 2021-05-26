@@ -84,7 +84,6 @@ section {
 }
 
 footer.footer {
-    padding-top: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,6 +93,9 @@ footer.footer {
     background-color: $azul;
     margin-top: 5%;
     padding-top: 0%;
+    height: 180px;
+
+
 
     div h3 {
         color: rgb(14, 95, 116);
@@ -152,6 +154,7 @@ a {
 
 .footer__ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     padding: 2%;
     text-decoration: none;
