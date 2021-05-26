@@ -18,6 +18,10 @@ $azul: rgba(143, 193, 206, 0.822);
 Header {
     background-color: rgba(143, 193, 206, 0.822);
 
+    div.heightNav {
+        height: 90px;
+    }
+
     div div {
         margin: .6em auto;
 
@@ -38,7 +42,10 @@ Header {
             margin: .6em auto;
         }
 
-
+        li.nav-item {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
 
         li:hover {
             display: flex;
@@ -49,6 +56,8 @@ Header {
             padding: 10px;
             white-space: nowrap;
             justify-content: center;
+
+
         }
 
     }

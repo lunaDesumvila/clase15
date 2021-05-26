@@ -203,6 +203,9 @@
 h3 {
   margin-left: 5%; }
 
+.heightNav {
+  height: 90px; }
+
 #grillaObraOleo {
   display: grid;
   grid-template-areas: "img1 img2 " "img3 img4 " "img5 img6 " "img7 img8" "img9 img10" "footer1 footer1";
@@ -423,6 +426,8 @@ div.container-fluid__padding {
 
 Header {
   background-color: rgba(143, 193, 206, 0.822); }
+  Header div.heightNav {
+    height: 90px; }
   Header div div {
     margin: .6em auto; }
     Header div div h1 {
@@ -436,6 +441,9 @@ Header {
     display: flex;
     justify-content: center;
     margin: .6em auto; }
+  Header div div li.nav-item {
+    padding-left: 1%;
+    padding-right: 1%; }
   Header div div li:hover {
     display: flex;
     width: 12%;
