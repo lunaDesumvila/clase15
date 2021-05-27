@@ -457,10 +457,12 @@ Header {
   padding-top: 5%; }
 
 section div.textoProceso {
-  padding: 12% 4% 8% 4%; }
-  section div.textoProceso h2.indexProceso {
-    display: flex;
-    justify-content: center; }
+  padding: 1% 8% 8% 2%; }
+
+section h2.indexProceso {
+  display: flex;
+  justify-content: center;
+  padding: 4%; }
 
 footer.footer {
   display: flex;
@@ -473,23 +475,31 @@ footer.footer {
   margin-top: 5%;
   padding-top: 0%;
   height: 180px; }
+  footer.footer div.centrarFooter {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 1% 8%; }
   footer.footer div h3 {
     color: #0e5f74;
     padding-top: 4%; }
+  footer.footer div.copy {
+    padding: 3px;
+    margin: 0;
+    text-align: center;
+    border-top: solid 2px white;
+    width: 100%; }
 
-div .fotosIndex {
-  padding-top: 4%; }
-  div .fotosIndex div .fotosIndex__margen {
-    border: 6px rgba(230, 159, 93, 0.89) solid;
-    margin-top: 6%;
-    margin-left: 2%;
-    padding: 1%; }
-
-.fotosIndex__margen {
-  border: 6px rgba(230, 159, 93, 0.89) solid;
-  margin-top: 6%;
-  margin-left: 2%;
-  padding: 1%; }
+div.paddingTop {
+  padding-top: 10%; }
+  div.paddingTop div.fotosIndex {
+    padding: 6%; }
+    div.paddingTop div.fotosIndex div.fotosIndex__margen {
+      border: 6px rgba(230, 159, 93, 0.89) solid;
+      margin-top: 6%;
+      margin-left: 15%;
+      padding: 1%;
+      max-width: 70%; }
 
 .carousel-inner {
   margin: 1%; }

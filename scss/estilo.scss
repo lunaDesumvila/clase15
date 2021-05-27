@@ -72,15 +72,18 @@ Header {
 section {
     div.textoProceso {
 
-        padding: 12% 4% 8% 4%;
-
-
-        h2.indexProceso {
-            display: flex;
-            justify-content: center;
-        }
+        padding: 1% 8% 8% 2%;
 
     }
+
+    h2.indexProceso {
+        display: flex;
+        justify-content: center;
+        padding: 4%;
+
+    }
+
+
 }
 
 footer.footer {
@@ -95,33 +98,45 @@ footer.footer {
     padding-top: 0%;
     height: 180px;
 
-
+    div.centrarFooter {
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding: 1% 8%;
+    }
 
     div h3 {
         color: rgb(14, 95, 116);
         padding-top: 4%;
     }
 
-}
-
-div .fotosIndex {
-    padding-top: 4%;
-
-    div .fotosIndex__margen {
-        border: 6px rgba(230, 159, 93, 0.89) solid;
-        margin-top: 6%;
-        margin-left: 2%;
-        padding: 1%;
+    div.copy {
+        padding: 3px;
+        margin: 0;
+        text-align: center;
+        border-top: solid 2px white;
+        width: 100%;
     }
-
 }
 
-.fotosIndex__margen {
-    border: 6px rgba(230, 159, 93, 0.89) solid;
-    margin-top: 6%;
-    margin-left: 2%;
-    padding: 1%;
+div.paddingTop {
+    padding-top: 10%;
+
+    div.fotosIndex {
+        padding: 6%;
+
+        div.fotosIndex__margen {
+            border: 6px rgba(230, 159, 93, 0.89) solid;
+            margin-top: 6%;
+            margin-left: 15%;
+            padding: 1%;
+            max-width: 70%;
+        }
+
+    }
 }
+
+
 
 .carousel-inner {
     margin: 1%;
