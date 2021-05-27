@@ -482,7 +482,8 @@ footer.footer {
     padding: 1% 8%; }
   footer.footer div h3 {
     color: #0e5f74;
-    padding-top: 4%; }
+    padding-top: 4%;
+    text-align: center; }
   footer.footer div.copy {
     padding: 3px;
     margin: 0;
