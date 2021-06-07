@@ -556,12 +556,26 @@ Header {
   padding-top: 5%; }
 
 section div.textoProceso {
-  padding: 1% 8% 8% 2%; }
+  text-align: center;
+  padding: 4% 8% 8% 2%; }
 
 section h2.indexProceso {
   display: flex;
   justify-content: center;
-  padding: 4%; }
+  padding: 4%;
+  text-align: center; }
+
+section .videoIndex {
+  text-align: center; }
+
+section .centrarFotosIndex {
+  justify-content: center;
+  text-align: center;
+  padding-left: 10%;
+  padding-bottom: 5%; }
+
+section .rounded {
+  text-align: center; }
 
 footer.footer {
   display: flex;
@@ -640,17 +654,14 @@ a {
   margin-left: 15px; }
 
 @media only screen and (max-width: 360px) {
-  #grillaIndex {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 400px 220px;
-    grid-template-areas: "carousel" "texto";
-    grid-column-gap: 20px; }
-    #grillaIndex .fotosIndex__margen {
-      grid-area: carousel;
-      width: 80%;
-      margin-left: 10%; }
-    #grillaIndex .textoProceso {
-      grid-area: texto; }
-      #grillaIndex .textoProceso p {
-        font-size: 14px; } }
+  .boxVideo {
+    width: 90%;
+    height: 90%; }
+  header div.heightNav {
+    height: auto; }
+  header .logoCompra {
+    text-align: center; }
+  section .centrarFotosIndex {
+    padding-top: 0%; }
+  footer.footer {
+    height: auto; } }
