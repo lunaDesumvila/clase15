@@ -49,26 +49,15 @@ div.container-fluid__padding {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    #grillaSobreMi {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 730px;
-        grid-template-areas:
-            "img biografia"
-        ;
-        grid-column-gap: 20px;
 
 
-        div.biografiaSobreMi {
-            grid-area: biografia;
-
-            h2.pSobreMi {
-                margin-top: 15%;
-            }
-
-            p.parrafoBiografia {
-                font-size: 15px;
-            }
-        }
+    div.container-fluid__padding div h2.pSobreMi {
+        margin-top: 10%;
     }
+
+    p.parrafoBiografia {
+        font-size: 20px;
+    }
+
+
 }

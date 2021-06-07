@@ -46,52 +46,6 @@ form.formulario {
     #grillaContacto #footerContacto {
       grid-area: footer; } }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  #grillaObraDigital {
-    display: grid;
-    grid-template-areas: "img1D img2D " "img3D  ." "footer footer";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(2, 600px) auto;
-    grid-column-gap: 1.25rem;
-    grid-row-gap: 0.625rem;
-    height: 100vh;
-    margin: 0; }
-    #grillaObraDigital .img1D {
-      grid-area: img1D;
-      width: 80%;
-      padding: 8%; }
-      #grillaObraDigital .img1D img {
-        max-width: 100%; }
-      #grillaObraDigital .img1D table {
-        width: 100%; }
-    #grillaObraDigital .img2D {
-      grid-area: img2D;
-      width: 80%;
-      padding: 8%; }
-      #grillaObraDigital .img2D img {
-        max-width: 100%; }
-      #grillaObraDigital .img2D table {
-        width: 100%; }
-    #grillaObraDigital .img3D {
-      grid-area: img3D;
-      width: 80%;
-      padding: 8%; }
-      #grillaObraDigital .img3D img {
-        max-width: 100%; }
-      #grillaObraDigital .img3D table {
-        width: 100%; }
-    #grillaObraDigital footer {
-      grid-area: footer; }
-      #grillaObraDigital footer .footerObraOleo {
-        grid-area: footer;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: "Montserrat", Sans-serif;
-        font-size: 0.9375rem;
-        margin-top: 45%; } }
-
 .obraEncabezado {
   grid-area: titulo;
   display: flex;
@@ -115,15 +69,8 @@ h3 {
     font-size: 2rem; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  #grillaObraOleo {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5, 500px) auto;
-    grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "footer1 footer1";
-    grid-column-gap: 20px; }
-  footer.footer {
-    grid-area: footer1;
-    width: 100%; } }
+  section div.col {
+    font-size: 20px; } }
 
 div.container-fluid__padding {
   padding-top: 4%; }
@@ -155,18 +102,10 @@ div.container-fluid__padding {
         font-size: 10px; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  #grillaSobreMi {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 730px;
-    grid-template-areas: "img biografia";
-    grid-column-gap: 20px; }
-    #grillaSobreMi div.biografiaSobreMi {
-      grid-area: biografia; }
-      #grillaSobreMi div.biografiaSobreMi h2.pSobreMi {
-        margin-top: 15%; }
-      #grillaSobreMi div.biografiaSobreMi p.parrafoBiografia {
-        font-size: 15px; } }
+  div.container-fluid__padding div h2.pSobreMi {
+    margin-top: 10%; }
+  p.parrafoBiografia {
+    font-size: 20px; } }
 
 .colorBody {
   background-color: rgba(247, 241, 246, 0.863); }
@@ -319,3 +258,22 @@ a {
     padding-top: 0%; }
   footer.footer {
     height: auto; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header div.heightNav {
+    height: auto;
+    width: 100%; }
+  section .boxVideo {
+    width: 96%;
+    height: 96%; }
+  section div.textoProceso {
+    font-size: 24px;
+    padding: 4%; }
+  section div.centrarFotosIndex {
+    padding-left: 1%; }
+    section div.centrarFotosIndex div div.card {
+      width: 12rem !important; }
+    section div.centrarFotosIndex .card-body {
+      font-size: 20px; }
+    section div.centrarFotosIndex h5.card-title {
+      font-size: 26px; } }
