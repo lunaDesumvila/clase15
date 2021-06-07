@@ -26,25 +26,15 @@ form.formulario {
     margin-bottom: 8%; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  #grillaContacto {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 650px 100px;
-    grid-template-areas: "contacto" "formulario" "footer";
-    grid-column-gap: 20px; }
-    #grillaContacto div h1.consultaTitulo {
-      grid-area: contacto;
-      padding: 0%;
-      position: relative;
-      margin-top: 4%;
-      font-size: 50px; }
-    #grillaContacto form.formulario {
-      grid-area: formulario;
-      width: 74%;
-      font-size: 30px;
-      margin-top: 8%; }
-    #grillaContacto #footerContacto {
-      grid-area: footer; } }
+  div h1.consultaTitulo {
+    padding: 0%;
+    position: relative;
+    margin-top: 4%;
+    font-size: 50px; }
+  form.formulario {
+    width: 74%;
+    font-size: 30px;
+    margin-top: 8%; } }
 
 .obraEncabezado {
   grid-area: titulo;
@@ -84,22 +74,13 @@ div.container-fluid__padding {
     height: 100%; }
 
 @media only screen and (max-width: 360px) {
-  #grillaSobreMi {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(2, 450px);
-    grid-template-areas: "img" "biografia";
-    grid-column-gap: 20px; }
-    #grillaSobreMi div img.imgSobreMi {
-      grid-area: img;
-      width: 100%;
-      height: 100%; }
-    #grillaSobreMi div.biografiaSobreMi {
-      grid-area: biografia; }
-      #grillaSobreMi div.biografiaSobreMi h2.pSobreMi {
-        margin-top: 15%; }
-      #grillaSobreMi div.biografiaSobreMi p.parrafoBiografia {
-        font-size: 10px; } }
+  div img.imgSobreMi {
+    width: 100%;
+    height: 100%; }
+  div.biografiaSobreMi h2.pSobreMi {
+    margin-top: 15%; }
+  div.biografiaSobreMi p.parrafoBiografia {
+    font-size: 10px; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   div.container-fluid__padding div h2.pSobreMi {
@@ -147,6 +128,9 @@ Header {
   display: flex;
   justify-content: center;
   padding-top: 5%; }
+
+div.bg-white {
+  background-color: rgba(230, 159, 93, 0.89) !important; }
 
 section div.textoProceso {
   text-align: center;
@@ -197,16 +181,14 @@ footer.footer {
     border-top: solid 2px white;
     width: 100%; }
 
-div.paddingTop {
-  padding-top: 10%; }
-  div.paddingTop div.fotosIndex {
-    padding: 6%; }
-    div.paddingTop div.fotosIndex div.fotosIndex__margen {
-      border: 6px rgba(230, 159, 93, 0.89) solid;
-      margin-top: 6%;
-      margin-left: 15%;
-      padding: 1%;
-      max-width: 70%; }
+div.paddingTop div.fotosIndex {
+  padding: 6%; }
+  div.paddingTop div.fotosIndex div.fotosIndex__margen {
+    border: 6px rgba(230, 159, 93, 0.89) solid;
+    margin-top: 6%;
+    margin-left: 15%;
+    padding: 1%;
+    max-width: 70%; }
 
 .carousel-inner {
   margin: 1%; }

@@ -42,36 +42,23 @@ form.formulario {
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    #grillaContacto {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100px 650px 100px;
-        grid-template-areas:
-            "contacto"
-            "formulario"
-            "footer";
-        grid-column-gap: 20px;
 
-        div h1.consultaTitulo {
-            grid-area: contacto;
-            padding: 0%;
-            position: relative;
-            margin-top: 4%;
-            font-size: 50px;
+    div h1.consultaTitulo {
 
-        }
+        padding: 0%;
+        position: relative;
+        margin-top: 4%;
+        font-size: 50px;
 
-        form.formulario {
-            grid-area: formulario;
-            width: 74%;
-            font-size: 30px;
-            margin-top: 8%;
-        }
-
-        #footerContacto {
-            grid-area: footer;
-        }
     }
+
+    form.formulario {
+
+        width: 74%;
+        font-size: 30px;
+        margin-top: 8%;
+    }
+
 
 
 }
