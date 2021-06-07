@@ -2,73 +2,42 @@
     text-align: center;
 }
 
-#grillaContacto {
-    display: grid;
-    grid-template-areas:
-        "formulario"
-        "footer";
-    grid-template-rows: 100px 500px auto;
-    grid-template-columns: 100%;
-    height: 100vh;
-    margin: 0;
-    grid-column-gap: 0rem;
-    grid-row-gap: 0rem;
-
-
-    form.formulario {
-        grid-area: formulario;
-        padding: 2% !important;
-        border: solid 8px rgba(143, 193, 206, 0.822);
-        margin: 2%;
-        margin-top: 6%;
-        margin-left: 16%;
-        border-radius: 5%;
-        background-color: rgba(230, 159, 93, 0.89);
-        width: 70%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #footerContacto {
-        grid-area: footer;
-    }
+form.formulario {
+    padding: 2% !important;
+    border: solid 8px rgba(143, 193, 206, 0.822);
+    margin: 2%;
+    margin-top: 6%;
+    margin-left: 16%;
+    border-radius: 5%;
+    background-color: rgba(230, 159, 93, 0.89);
+    width: 70%;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 //MEDIAS QUERIES CONTACTO
 
 @media only screen and (max-width:360px) {
-    #grillaContacto {
-        display: grid;
-        grid-template-areas:
-            "contacto"
-            "formulario"
-            "footer";
-        grid-template-rows: 70px 500px auto;
-        grid-template-columns: 100%;
-        height: 100vh;
-        margin: 0;
-        grid-column-gap: 0rem;
-        grid-row-gap: 0rem;
 
-        div h1.consultaTitulo {
-            grid-area: contacto;
-            padding: 0%;
-            position: relative;
-            padding-top: 4%;
-            font-size: 28px;
-        }
 
-        form.formulario {
-            grid-area: formulario;
-            width: 74%;
-            font-size: 14px;
-            margin-top: 16%;
-        }
-
-        #footerContacto {
-            grid-area: footer;
-        }
+    div h1.consultaTitulo {
+        grid-area: contacto;
+        padding: 0%;
+        position: relative;
+        padding-top: 4%;
+        font-size: 28px;
     }
+
+    form.formulario {
+
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 8%;
+    }
+
+
 }
 
 
