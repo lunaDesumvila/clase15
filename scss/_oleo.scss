@@ -1,4 +1,5 @@
 $azul: rgba(143, 193, 206, 0.822);
+$naranja: rgba(230, 159, 93, 0.89);
 
 .obraEncabezado {
     grid-area: titulo;
@@ -12,6 +13,23 @@ $azul: rgba(143, 193, 206, 0.822);
 
 h3 {
     margin-left: 5%;
+}
+
+/*BOTON CARRITO*/
+
+.btn {
+    border: 2px solid transparent;
+}
+
+section div button.btn-outline-success {
+    border-color: $naranja;
+    color: $naranja;
+}
+
+section div button.btn-outline-success:hover {
+    background-color: $azul;
+    border-color: $naranja;
+    color: $naranja;
 }
 
 

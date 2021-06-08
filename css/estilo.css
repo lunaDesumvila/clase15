@@ -50,6 +50,19 @@ form.formulario {
 h3 {
   margin-left: 5%; }
 
+/*BOTON CARRITO*/
+.btn {
+  border: 2px solid transparent; }
+
+section div button.btn-outline-success {
+  border-color: rgba(230, 159, 93, 0.89);
+  color: rgba(230, 159, 93, 0.89); }
+
+section div button.btn-outline-success:hover {
+  background-color: rgba(143, 193, 206, 0.822);
+  border-color: rgba(230, 159, 93, 0.89);
+  color: rgba(230, 159, 93, 0.89); }
+
 @media only screen and (max-width: 360px) {
   footer.footer {
     grid-area: footer;
