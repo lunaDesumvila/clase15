@@ -83,6 +83,11 @@ section {
 
     }
 
+
+    div.card-body {
+        background-color: $azul
+    }
+
     h2.indexProceso {
         display: flex;
         justify-content: center;
@@ -226,13 +231,31 @@ a {
             height: auto;
         }
 
+        .noWrap {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
         .logoCompra {
-            text-align: center;
+
+            width: 18%;
         }
     }
 
-    section .centrarFotosIndex {
-        padding-top: 0%;
+    section {
+
+
+        .indexProceso {
+            font-size: 26px;
+        }
+
+        div.card-body {
+            background-color: $azul
+        }
+
+        .centrarFotosIndex {
+            padding-top: 0%;
+        }
     }
 
     footer.footer {
@@ -264,11 +287,13 @@ a {
             padding: 4%;
         }
 
+
         div.centrarFotosIndex {
-            padding-left: 1%;
+            padding-left: 1rem;
+            text-align: -webkit-center;
 
             div div.card {
-                width: 12rem !important;
+                width: 15rem !important;
             }
 
             .card-body {
@@ -278,6 +303,7 @@ a {
             h5.card-title {
                 font-size: 26px;
             }
+
         }
     }
 

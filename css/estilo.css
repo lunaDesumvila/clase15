@@ -56,7 +56,8 @@ h3 {
   img.producto__imagen {
     width: 100%; }
   header div div div h1 {
-    font-size: 2rem; } }
+    font-size: 2.5rem;
+    text-align: center; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   section div.col {
@@ -69,7 +70,6 @@ div.container-fluid__padding {
     display: flex;
     justify-content: center; }
   div.container-fluid__padding div img.imgSobreMi {
-    grid-area: img;
     width: 100%;
     height: 100%; }
 
@@ -135,6 +135,9 @@ div.bg-white {
 section div.textoProceso {
   text-align: center;
   padding: 4% 8% 8% 2%; }
+
+section div.card-body {
+  background-color: rgba(143, 193, 206, 0.822); }
 
 section h2.indexProceso {
   display: flex;
@@ -234,8 +237,15 @@ a {
     height: 90%; }
   header div.heightNav {
     height: auto; }
+  header .noWrap {
+    display: flex;
+    flex-wrap: nowrap; }
   header .logoCompra {
-    text-align: center; }
+    width: 18%; }
+  section .indexProceso {
+    font-size: 26px; }
+  section div.card-body {
+    background-color: rgba(143, 193, 206, 0.822); }
   section .centrarFotosIndex {
     padding-top: 0%; }
   footer.footer {
@@ -252,9 +262,10 @@ a {
     font-size: 24px;
     padding: 4%; }
   section div.centrarFotosIndex {
-    padding-left: 1%; }
+    padding-left: 1rem;
+    text-align: -webkit-center; }
     section div.centrarFotosIndex div div.card {
-      width: 12rem !important; }
+      width: 15rem !important; }
     section div.centrarFotosIndex .card-body {
       font-size: 20px; }
     section div.centrarFotosIndex h5.card-title {
