@@ -2,6 +2,7 @@
     text-align: center;
 }
 
+/*FORMULARIO CONTACTO*/
 form.formulario {
     padding: 2% !important;
     border: solid 8px rgba(143, 193, 206, 0.822);
@@ -15,15 +16,11 @@ form.formulario {
     justify-content: center;
 }
 
-
-
-//MEDIAS QUERIES CONTACTO
+/*MEDIAS QUERIES CONTACTO*/
 
 @media only screen and (max-width:360px) {
 
-
     div h1.consultaTitulo {
-        grid-area: contacto;
         padding: 0%;
         position: relative;
         padding-top: 4%;
@@ -31,7 +28,6 @@ form.formulario {
     }
 
     form.formulario {
-
         width: 100%;
         margin-left: 0%;
         margin-bottom: 8%;
@@ -40,16 +36,15 @@ form.formulario {
 
 }
 
+/*MEDIAS QUERIES CONTACTO*/
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
     div h1.consultaTitulo {
-
         padding: 0%;
         position: relative;
         margin-top: 4%;
         font-size: 50px;
-
     }
 
     form.formulario {
@@ -61,7 +56,5 @@ form.formulario {
     div.form-group__botones {
         text-align: center;
     }
-
-
 
 }

@@ -2,7 +2,6 @@ $azul: rgba(143, 193, 206, 0.822);
 $naranja: rgba(230, 159, 93, 0.89);
 
 .obraEncabezado {
-    grid-area: titulo;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +20,8 @@ h3 {
     border: 2px solid transparent;
 }
 
+/*SECTION*/
+
 section div button.btn-outline-success {
     border-color: $naranja;
     color: $naranja;
@@ -32,8 +33,7 @@ section div button.btn-outline-success:hover {
     color: $naranja;
 }
 
-
-//MEDIA QUERIES DE OLEO
+/*MEDIA QUERIES DE OLEO*/
 
 @media only screen and (max-width:360px) {
 
@@ -54,6 +54,7 @@ section div button.btn-outline-success:hover {
     }
 }
 
+/*MEDIA QUERIES DE OLEO*/
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     section div.col {
