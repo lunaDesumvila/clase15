@@ -107,7 +107,7 @@ div.container-fluid__padding {
   div.container-fluid__padding div h2.pSobreMi {
     margin-top: 10%; }
   p.parrafoBiografia {
-    font-size: 20px; } }
+    font-size: 16px; } }
 
 .colorBody {
   background-color: rgba(247, 241, 246, 0.863); }
@@ -263,6 +263,8 @@ a {
     flex-wrap: nowrap; }
   header .logoCompra {
     width: 18%; }
+  header ul.navbar-nav {
+    width: 462%; }
   section .indexProceso {
     font-size: 26px; }
   section div.card-body {
